@@ -9,7 +9,7 @@ tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1}, '-=1.5')
     id: 'home'
   }, 'Home', '/'));
 
- const homeBtn = document.querySelector('#btn-home');
+const homeBtn = document.querySelector('#btn-home');
 homeBtn.addEventListener('click', function(event) {
   tl.fromTo('.about', {x: '0%', duration: 1.5}, {x: '100%', duration: 1.5});
   tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5});
