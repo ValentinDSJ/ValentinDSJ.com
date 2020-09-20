@@ -7,14 +7,20 @@
 main {
     font-family: "Montserrat", sans-serif;
     color: white;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .landing {
     min-height: 100vh;
     background: url('../assets/tori.jpg');
     background-size: cover;
-    /* background: black; */
-    padding: 0rem 5rem;
+    padding: 0rem 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav {
@@ -30,7 +36,7 @@ nav {
 }
 
 .nav-links li {
-    padding-left: 10rem;
+    padding-left: 10vw;
     font-size: 1.2rem;
 }
 
@@ -41,10 +47,10 @@ nav {
 }
 
 .big-text {
-    position: absolute;
+    /* position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+    left: 50%; */
+    /* transform: translate(-50%, -40%); */
 }
 
 .big-text h2 {
@@ -58,7 +64,7 @@ nav {
     text-align: center;
     font-size: 2rem;
     max-width: 80%;
-    padding: 0rem 7rem;
+    padding: 0rem 7vw;
     line-height: 150%;
 }
 
@@ -82,7 +88,7 @@ nav {
 
 .slider {
     background: rgb(10,45,115);
-background: linear-gradient(180deg, rgba(10,45,115,1) 0%, rgba(168,177,255,0.7315301120448179) 100%);
+    background: linear-gradient(180deg, rgba(10,45,115,1) 0%, rgba(168,177,255,0.7315301120448179) 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -123,7 +129,7 @@ button:focus {
 
 .footer {
     width: 100%;
-    padding-right: 5rem;
+    padding-right: 5vw;
     text-align: right;
     position: absolute;
     left: 0;
@@ -132,7 +138,7 @@ button:focus {
 
 .about {
     min-height: 100vh;
-    padding: 0rem 5rem;
+    padding: 0rem 5vw;
     background: url('../assets/fuji.jpg');
     background-size: cover;
     position: fixed;
@@ -141,19 +147,29 @@ button:focus {
     width: 100%;
     height: 100%;
     transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-text {
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    max-width: 550px;
-    max-height: 90vh;
+    margin: 0 auto;
+    min-width: 250px;
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    max-height: 60vh;
     border-radius: 5px;
     background: #141414;
+}
+
+.skills {
+    padding-bottom: 3%;
+}
+
+.skills img {
+    object-fit: contain;
 }
 
 .skill-list {
@@ -166,5 +182,25 @@ button:focus {
 }
 
 th, td {
+    width: 33;
     padding: 15px;
-  }
+}
+
+svg {
+    fill: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .big-text h2 {
+        white-space: normal;
+        font-size: 3.5rem;
+    }
+
+    .small-text {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 2rem;
+    }
+}
