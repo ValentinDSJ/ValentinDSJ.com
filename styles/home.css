@@ -139,7 +139,7 @@ button:focus {
 .about {
     min-height: 100vh;
     padding: 0rem 5vw;
-    background: url('../assets/fuji.jpg');
+    background: url('../assets/fuji-min.jpg');
     background-size: cover;
     position: fixed;
     top: 0;
