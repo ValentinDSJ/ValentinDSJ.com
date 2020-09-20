@@ -102,33 +102,6 @@ background: linear-gradient(180deg, rgba(10,45,115,1) 0%, rgba(168,177,255,0.731
     display: inline-block;
 }
 
-.about {
-    min-height: 100vh;
-    padding: 0rem 5rem;
-    background: url('../assets/fuji.jpg');
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateX(-100%);
-}
-
-.about-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-
-    max-width: 550px;
-    max-height: 90vh;
-    width: 65%;
-    /* height: 30%; */
-    border-radius: 5px;
-    background: #141414;
-}
-
 .selected {
     border-bottom: 2px solid;
     padding-bottom: 3px;
@@ -156,3 +129,42 @@ button:focus {
     left: 0;
     bottom: 0;
 }
+
+.about {
+    min-height: 100vh;
+    padding: 0rem 5rem;
+    background: url('../assets/fuji.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+}
+
+.about-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 550px;
+    max-height: 90vh;
+    border-radius: 5px;
+    background: #141414;
+}
+
+.skill-list {
+    display: flex;
+    list-style: none;
+}
+
+.skill-list {
+    padding: 2% 2%;
+}
+
+th, td {
+    padding: 15px;
+  }
