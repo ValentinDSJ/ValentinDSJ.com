@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.landing {
+    min-height: 100vh;
+    background: url('../assets/tori.jpg');
+    background-size: cover;
+    /* background: black; */
+    padding: 0rem 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding-left: 10rem;
+    font-size: 1.2rem;
+}
+
+#logo {
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.big-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.big-text h2 {
+    font-size: 5rem;
+    padding: 0rem 0rem;
+    white-space: nowrap;
+}
+
+.small-text {
+    display: inline;
+    text-align: center;
+    font-size: 2rem;
+    max-width: 80%;
+    padding: 0rem 7rem;
+    line-height: 150%;
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    color: aliceblue;
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+}
+
+.slider {
+    background: rgb(10,45,115);
+background: linear-gradient(180deg, rgba(10,45,115,1) 0%, rgba(168,177,255,0.7315301120448179) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: translateY(100%);
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.about {
+    min-height: 100vh;
+    padding: 0rem 5rem;
+    background: url('../assets/fuji.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+}
+
+.about-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    max-width: 550px;
+    max-height: 90vh;
+    width: 65%;
+    /* height: 30%; */
+    border-radius: 5px;
+    background: #141414;
+}
+
+.selected {
+    border-bottom: 2px solid;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+}
+
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.footer {
+    width: 100%;
+    padding-right: 5rem;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
