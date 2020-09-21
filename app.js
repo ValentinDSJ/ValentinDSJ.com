@@ -4,22 +4,22 @@ tl.to('.text', {y: '0%', duration: 1, stagger: 0.25});
 tl.to('.slider', {y: '-100%', duration: 1.5, delay: 0.5});
 tl.to('.intro', {y: '-100%', duration: 1}, '-=1.5');
 tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1})
-  .fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1}, '-=.5')
+  .fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5}, '-=.5')
   .call(history.pushState({
     id: 'home'
   }, 'Home', '/'));
 
 function displayHome(event) {
-  tl.fromTo('.about', {x: '0%', duration: 1.5}, {x: '100%', duration: 1.5})
+  tl.fromTo('.about', {x: '0%', duration: 1.5}, {x: '100%', duration: 1})
     .fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1})
-    .fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1}, '-=.5');
+    .fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5}, '-=.5');
 }
 
 function displayAbout(event) {
-  tl.fromTo('.about', {x: '100%', duration: 1.5}, {x: 0, y: 0, duration: 1.5})
-    .fromTo('#content-1', {opacity: 0}, {opacity: 1, duration: 1})
-    .fromTo('#content-2', {opacity: 0}, {opacity: 1, duration: 1}, '-=.5')
-    .fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1}, '-=.5')
+  tl.fromTo('.about', {x: '100%', duration: 1.5}, {x: 0, y: 0, duration: 1})
+    .fromTo('#content-1', {opacity: 0}, {opacity: 1, duration: .5})
+    .fromTo('#content-2', {opacity: 0}, {opacity: 1, duration: .5})
+    .fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5})
 }
 
 const homeBtn = document.querySelector('#btn-home');
