@@ -169,7 +169,6 @@ button:focus {
     width: 50%;
     height: auto;
     max-width: 600px;
-    max-height: 60vh;
     border-radius: 5px;
     background: #141414;
 }
@@ -212,5 +211,20 @@ svg {
 
     .intro-text {
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .big-text h2 {
+        white-space: normal;
+        font-size: 2.5rem;
+    }
+
+    .small-text {
+        font-size: 1rem;
+    }
+
+    .intro-text {
+        font-size: 1.5rem;
     }
 }
