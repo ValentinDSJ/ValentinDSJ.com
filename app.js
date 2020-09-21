@@ -4,7 +4,7 @@ tl.to('.text', {y: '0%', duration: 1, stagger: 0.25});
 tl.to('.slider', {y: '-100%', duration: 1.5, delay: 0.5});
 tl.to('.intro', {y: '-100%', duration: 1}, '-=1.5');
 tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1})
-  .fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5}, '-=.5')
+  .fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5}, '-=.25')
   .call(history.pushState({
     id: 'home'
   }, 'Home', '/'));
@@ -12,7 +12,7 @@ tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1})
 function displayHome(event) {
   tl.fromTo('.about', {x: '0%', duration: 1.5}, {x: '100%', duration: 1})
     .fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1})
-    .fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5}, '-=.5');
+    .fromTo('nav', {opacity: 0}, {opacity: 1, duration: .5}, '-=.25');
 }
 
 function displayAbout(event) {
