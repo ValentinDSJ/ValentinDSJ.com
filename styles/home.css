@@ -152,11 +152,21 @@ button:focus {
     justify-content: space-between;
 }
 
+.about-content {
+    display: flex;
+}
+
+@media only screen and (max-width: 1400px) {
+    .about-content {
+        display: inline;
+    }
+}
+
 .about-text {
     text-align: center;
-    margin: 0 auto;
+    margin: 5% auto;
     min-width: 250px;
-    width: 80%;
+    width: 50%;
     height: auto;
     max-width: 600px;
     max-height: 60vh;
