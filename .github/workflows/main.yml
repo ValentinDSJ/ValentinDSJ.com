@@ -13,8 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Debug DNS
+        run: nslookup ${{ secrets.HOST }}
+
       - name: Deploy to server
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
