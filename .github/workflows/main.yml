@@ -17,12 +17,11 @@ jobs:
         run: echo ${{ secrets.HOST }}
 
       - name: Deploy to server
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: gh-deploy
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: |
-            cd /var/www/valentindsj.com/html
-            git pull origin main
+          source: ./
+          target: /var/www/valentindsj.com/html
