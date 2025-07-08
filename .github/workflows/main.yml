@@ -13,11 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Debug DNS
-        run: echo ${{ secrets.HOST }}
-
       - name: Deploy to server
-        uses: appleboy/ssh-action@master
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: gh-deploy
