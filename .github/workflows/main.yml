@@ -13,9 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check Host Resolution
-        run: ping -c 4 ${{ secrets.HOST }}
-
       - name: Deploy to server
         uses: appleboy/scp-action@master
         with:
