@@ -3,7 +3,7 @@ name: Deploy to VPS
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
@@ -13,12 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check host
-        run: |
-          if [ -z "${{ secrets.HOST }}" ]; then
-            echo "HOST secret is not set. Skipping deployment."
-            exit 0
-          fi
+      - name: Check Host Resolution
+        run: ping -c 4 ${{ secrets.HOST }}
 
       - name: Deploy to server
         uses: appleboy/scp-action@master
